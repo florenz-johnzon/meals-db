@@ -1,0 +1,72 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #fce7e7;
+  transition: left 0.3s ease;
+
+  &.open {
+    left: 0;
+  }
+
+  .sidebar-content {
+    padding: 20px;
+
+    .close-btn {
+      border: none;
+      background: none;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #ff0b0b;
+    }
+
+    .close-icon {
+      font-size: 24px;
+      border-radius: 50%;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-direction: column;
+      margin-top: 60px;
+      margin-bottom: 20px;
+
+      a {
+        color: black;
+        text-decoration: none;
+        padding: 10px 0;
+        font-size: 18px;
+        transition: color 0.3s ease;
+        padding: 20px;
+
+        &:hover {
+          color: #ff0b0b;
+        }
+      }
+    }
+
+    .about-us {
+      display: flex;
+      margin-top: 120px;
+      left: 20px;
+      width: 100%;
+      text-align: center;
+      a {
+        color: black;
+        text-decoration: none;
+        padding: 10px 0;
+        font-size: 18px;
+        transition: color 0.3s ease;
+        padding: 20px;
+
+        &:hover {
+          color: #ff0b0b;
+        }
+      }
+    }
+  }
+}
